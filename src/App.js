@@ -8,7 +8,7 @@ function App() {
   return (
 
         <Routes>
-          <Route path="/" element={<StartingScreen />} />
+          {/* <Route path="/" element={<StartingScreen />} /> */}
           <Route path="/game" element={<Game />} />
         </Routes>
   );

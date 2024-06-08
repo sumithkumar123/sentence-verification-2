@@ -1,0 +1,98 @@
+.game-container {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar-content > div {
+    margin: 0 10px;
+  }
+  
+  .progress-bar-container {
+    height: 20px;
+    background-color: #f3f3f3;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+  }
+  
+  .transparent-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .sentence {
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: fantasy;
+    width: 100%;
+    margin-left: 2vw;
+  }
+  .images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-wrapper {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Updated width and height if necessary, but it is now inline */
+  }
+  
+  img {
+    /* Ensuring images fit their containers */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: relative;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .play-again-button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

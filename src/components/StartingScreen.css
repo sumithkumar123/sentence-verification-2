@@ -1,0 +1,35 @@
+.starting-screen {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align items to the bottom */
+  height: 100vh;
+  background-color: black; /* Set background color to black */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.play-button {
+  font-size: 2.5vw; /* Use vw for font size */
+  padding: 1vw 2vw; /* Use vw for padding */
+  cursor: pointer;
+  margin-bottom: 5vh; /* Use vh for margin-bottom */
+  background-color: #38b6ff;
+  font-weight: 300;
+  border-radius: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #1485ee;
+}
+
+.starting-screen-text {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  margin-bottom: 2vh; /* Use vh for margin-bottom */
+  font-size: 1.5vw; /* Use vw for font size */
+}

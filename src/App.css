@@ -15,7 +15,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +34,251 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.game-container {
+  display: flex;
+  padding-top: 5vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sentence {
+  margin-bottom: 2vh;
+}
+
+.play-again-button {
+  width: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+}
+
+.style-container {
+  background-color: #67b7ec;
+  border: 1px solid #090a0a;
+  border-radius: 5px;
+  padding: 2vh;
+  margin: 2vh;
+}
+
+.modal-style {
+  background-color: #8df883;
+  border: 1px solid #47867e;
+  border-radius: 5px;
+  padding: 2vh;
+  margin: 2vh;
+}
+
+.space-between-images {
+  width: 4vw;
+}
+
+.heading-in-navbar {
+  color: azure;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+.other-text-navbar {
+  color: skyblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-container:hover {
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 5vw;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1;
+  width: 80vw;
+  display:flex;
+  flex-direction: column;
+}
+
+.modal-content p {
+  margin-bottom: 2vh;
+}
+
+.modal-content button {
+  margin-top: 2vh;
+  padding: 1vh 2vw;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.image-wrapper {
+  display: inline-block;
+  margin: 2vw;
+  padding: 2vw;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: transparent; /* default background color */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.image-wrapper:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.image-wrapper.green {
+  background-color: rgb(77, 211, 77);
+}
+
+.image-wrapper.red {
+  background-color: rgb(230, 82, 82);
+}
+
+.full-width-navbar {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Linear gradient background */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 1vh 0;
+  color: black; /* Set text color to black */
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-in-navbar {
+  margin-top: '35%';
+  font-size: 2em;
+  color: black; /* Set heading text color to black */
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+}
+
+.screen-info, .other-text-navbar {
+  margin: 0 1vw;
+  color: black; /* Set text color to black */
+}
+
+.screen-info h5, .other-text-navbar h3 {
+  margin: 0;
+}
+
+.other-text-navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-text-navbar h3 {
+  margin: 0.5vh 0;
+  color: black;
+}
+
+
+.other-text-navbar span.red {
+  color: red;
+}
+
+.progress-bar-container {
+  width: 95%;
+  margin-left: 2vw;
+  height: 1vh;
+  background-color: #e0e0e0;
+  margin-top: 2vh;
+  border-radius: 5px;
+  overflow: hidden; /* Ensures the progress bar is confined within the container */
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #76c7c0;
+  transition: width 0.5s ease;
+  border-radius: 5px 0 0 5px; /* Smooth edges on the left side */
+}
+
+.transparent-box {
+  background-color: rgba(105, 104, 104, 0.26);
+  border-radius: 10px;
+  padding: 1vh;
+  margin-top: 2vh;
+  margin-right: 2vw;
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  width: 90%;
+  flex-direction: row;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add this line */
+}
+
+
+.image-wrapper {
+  margin: 2vh;
+}
+
+.image-wrapper img {
+  max-width: 100%; /* Ensures the image will not overflow the wrapper */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.navbar-screens {
+  margin-top: '2%';
+  text-align: center;
 }

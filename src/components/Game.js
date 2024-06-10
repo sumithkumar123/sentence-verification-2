@@ -97,17 +97,17 @@ function Game() {
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px',
            }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-              <div className='style-container' style={{ color: 'black', marginBottom: '10px' }}>
-                <h4>Attempts</h4>
-                <h2 style={{ color: 'black', margin: 0 }}>{totalAttempts}</h2>
+              <div className='style-container' style={{ color: 'black', marginBottom: '0.5%' ,height:"50px",width:"150px"}}>
+                <h5>Attempts</h5>
+                <h6 style={{ color: 'black', margin: 0 }}>{totalAttempts}</h6>
               </div>
-              <div className='style-container' style={{ color: 'black', marginBottom: '10px' }}>
+              <div className='style-container' style={{ color: 'black', marginBottom: '10px', height:'50px', width:'150px' }}>
                 <h4>Time(sec)</h4>
-                <h2 style={{ color: 'black', margin: 0 }}>{Math.floor(totalElapsedTime / 1000)}</h2>
+                <h2 style={{ color: 'black', margin: 0, height: '50px', width: '80px' }}>{Math.floor(totalElapsedTime / 1000)}</h2>
               </div>
             </div>
             <div className='style-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src={`${process.env.PUBLIC_URL}/images/medal.gif`} alt="medal" style={{ width: '200px', height: '200px' }} />
+              <img src={`${process.env.PUBLIC_URL}/images/medal.gif`} alt="medal" style={{ width: '40px', height: '30px' }} />
             </div>
           </div>
         </div>

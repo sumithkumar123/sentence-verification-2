@@ -98,12 +98,12 @@ function Game() {
            }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <div className='style-container' style={{ color: 'black', marginBottom: '0.5%' ,height:"50px",width:"150px"}}>
-                <h5>Attempts</h5>
-                <h6 style={{ color: 'black', margin: 0 }}>{totalAttempts}</h6>
+                <h6>Attempts: {totalAttempts}</h6>
+                {/* <h6 style={{ color: 'black', margin: 0 }}>{totalAttempts}</h6> */}
               </div>
               <div className='style-container' style={{ color: 'black', marginBottom: '10px', height:'50px', width:'150px' }}>
-                <h4>Time(sec)</h4>
-                <h2 style={{ color: 'black', margin: 0, height: '50px', width: '80px' }}>{Math.floor(totalElapsedTime / 1000)}</h2>
+                <h6>Time(sec): {Math.floor(totalElapsedTime / 1000)}</h6>
+                {/* <h6 style={{ color: 'black', margin: 0, height: '50px', width: '80px' }}>{Math.floor(totalElapsedTime / 1000)}</h6> */}
               </div>
             </div>
             <div className='style-container' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
